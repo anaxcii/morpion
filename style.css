@@ -1,0 +1,47 @@
+h1{
+    display: flex;
+    justify-content: center;
+}
+
+.nom-joueurs{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+label{
+    display: none;
+}
+
+input{
+    font-size: medium;
+    text-align: center;
+    height: 50px;
+    width: 150px;
+}
+
+.tableau{
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+
+}
+
+.carre{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    font-size: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.message {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 20px;
+}
