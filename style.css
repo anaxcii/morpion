@@ -19,14 +19,14 @@ input{
     width: 150px;
 }
 
-.tableau{
+#tableau{
     display: flex;
     flex-wrap: wrap;
     width: 300px;
     height: 300px;
     margin: 0 auto;
-
 }
+
 
 .carre{
     width: 100px;
@@ -44,4 +44,22 @@ input{
     font-size: 24px;
     text-align: center;
     margin-top: 20px;
+}
+
+button{
+    justify-content: center;
+    font-size: medium;
+    text-align: center;
+    height: 50px;
+    width: 150px;
+}
+
+#btn{
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.disabled{
+    visibility: hidden;
 }
