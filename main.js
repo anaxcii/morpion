@@ -7,10 +7,10 @@ let joueurActu = 'X';
 let joueur1Nom = 'Joueur 1';
 let joueur2Nom = 'Joueur 2';
 
-player1NameInput.addEventListener('input', () => {
-    player1Name = player1NameInput.value;
+joueur1NomInput.addEventListener('input', () => {
+    joueur1Nom = joueur1NomInput.value;
 });
 
-player2NameInput.addEventListener('input', () => {
-    player2Name = player2NameInput.value;
+joueur2NomInput.addEventListener('input', () => {
+    joueur2Nom = joueur2NomInput.value;
 });
