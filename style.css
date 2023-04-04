@@ -69,3 +69,10 @@ button{
     justify-content: space-evenly;
     font-size: x-large;
 }
+
+a {
+
+    color: black;
+    text-decoration: none;
+
+}
