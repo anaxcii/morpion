@@ -5,6 +5,8 @@ const joueur2NomInput = document.querySelector('#joueur2-nom');
 let joueurActu = 'X';
 let joueur1Nom = 'Joueur 1';
 let joueur2Nom = 'Joueur 2';
+let joueur1Score = 0;
+let joueur2Score = 0;
 
 joueur1NomInput.addEventListener('input', () => {
     joueur1Nom = joueur1NomInput.value;
@@ -41,11 +43,18 @@ function gagne() {
         if (carre[a].textContent === joueurActu &&
             carre[b].textContent === joueurActu &&
             carre[c].textContent === joueurActu) {
-            return true;
+                if (joueurActu === 'X') {
+                    joueur1Score++;
+                    document.querySelector('#V1').textContent = joueur1Score;
+                } else {
+                    joueur2Score++;
+                    document.querySelector('#V2').textContent = joueur2Score;
+                }
+                return true;
+            }
         }
+        return false;
     }
-    return false;
-}
 
 function egalite() {
     for (let i = 0; i < carre.length; i++) {
@@ -88,3 +97,5 @@ function rejouer(){
     document.querySelector("#btn").classList.add("disabled");
     document.querySelector("#tableau").classList.remove("disabled");
 }
+
+

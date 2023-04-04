@@ -63,3 +63,9 @@ button{
 .disabled{
     visibility: hidden;
 }
+
+.score{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: x-large;
+}
